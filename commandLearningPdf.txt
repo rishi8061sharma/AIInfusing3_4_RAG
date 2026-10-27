@@ -1,0 +1,33 @@
+ => pip install langchain langchain-openai 
+ 
+ => python -m pip install --upgrade pip setuptools wheel
+ 
+ => # pip install langchain langchain-openai langchain-chroma langchain-huggingface \
+#             langchain-community pypdf sentence-transformers gradio python-dotenv
+
+
+
+
+Step 1: Activate your virtual environment
+
+=> cd "D:\AI Infusing Learning\ScalerProjects\AILearning3_4"
+
+.\.venv313\Scripts\Activate.ps1
+
+
+Step 2: Upgrade pip and install the packages
+
+
+=> python -m pip install --upgrade pip setuptools wheel
+
+
+Then install the dependencies:
+
+=> python -m pip install langchain langchain-openai langchain-chroma langchain-huggingface langchain-community pypdf sentence-transformers gradio python-dotenv
+
+
+
+=> python -c "import langchain, langchain_openai, langchain_chroma, langchain_huggingface, langchain_community, pypdf, sentence_transformers, gradio, dotenv; print('All imports successful')"
+
+
+print('All imports successful')
