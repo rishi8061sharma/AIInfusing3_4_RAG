@@ -1,0 +1,102 @@
+PS D:\AI Infusing Learning\ScalerProjects\AI Learning> py -3.13 -m venv .venv313
+.\.venv313\Scripts\Activate.ps1
+
+
+
+(.venv313) PS D:\AI Infusing Learning\ScalerProjects\AILearning3_4>
+(.venv313) PS D:\AI Infusing Learning\ScalerProjects\AILearning3_4> python -m pip install --upgrade pip
+Requirement already satisfied: pip in .\.venv313\Lib\site-packages (26.2.2)
+(.venv313) PS D:\AI Infusing Learning\ScalerProjects\AILearning3_4>
+(.venv313) PS D:\AI Infusing Learning\ScalerProjects\AILearning3_4> python -m pip install torch transformers
+
+
+
+py -3.12 -m venv .venv
+
+.\.venv\Scripts\Activate.ps1
+
+python -m pip install --upgrade pip
+
+python -m pip install torch transformers
+
+
+python -c "import torch; print(torch.__version__)"
+
+
+Traceback (most recent call last):
+  File "D:\AI Infusing Learning\ScalerProjects\AILearning3_4\embeddings.py", line 2, in <module>
+    from sentence_transformers import SentenceTransformer
+ModuleNotFoundError: No module named 'sentence_transformers
+=> python -m pip install sentence-transformers
+
+=> python -c "from sentence_transformers import SentenceTransformer; print('Installation successful')"
+
+
+=> python -m pip install --upgrade huggingface_hub
+
+
+Traceback (most recent call last):
+  File "D:\AI Infusing Learning\ScalerProjects\AILearning3_4\chunk_character.py", line 1, in <module>
+    from langchain_text_splitters import CharacterTextSplitter
+ModuleNotFoundError: No module named 'langchain_text_splitters'
+
+
+=> python -m pip install langchain-text-splitters
+
+Step 2: Verify the installation
+
+python -c "from langchain_text_splitters import CharacterTextSplitter; print('Installation successful')"
+
+
+If successful, run your script again:
+python "D:\AI Infusing Learning\ScalerProjects\AILearning3_4\chunk_character.py"
+
+File "D:\AI Infusing Learning\ScalerProjects\AILearning3_4\chunk_character.py", line 11, in <module>
+    chunks = splitter.split_text(document)
+                                 ^^^^^^^^
+NameError: name 'document' is not defined
+
+
+Traceback (most recent call last):
+  File "D:\AI Infusing Learning\ScalerProjects\AILearning3_4\chunk_recrussive.py", line 8, in <module>
+    chunks = splitter.split_text(your_long_document)
+                                 ^^^^^^^^^^^^^^^^^^
+NameError: name 'your_long_document' is not defined
+(.venv313) PS D:\AI Infusing Learning\ScalerProjects\AILearning3_4>
+
+Traceback (most recent call last):
+  File "D:\AI Infusing Learning\ScalerProjects\AILearning3_4\index.py", line 2, in <module>
+    from langchain_huggingface import HuggingFaceEmbeddings
+ModuleNotFoundError: No module named 'langchain_huggingface'
+
+=> python -m pip install langchain-huggingface
+
+
+python -c "from langchain_huggingface import HuggingFaceEmbeddings; print('Import successful')"
+
+Traceback (most recent call last):
+  File "D:\AI Infusing Learning\ScalerProjects\AILearning3_4\index.py", line 3, in <module>
+    from langchain_chroma import Chroma
+ModuleNotFoundError: No module named 'langchain_chroma'
+
+This error means the LangChain Chroma integration package is missing from your active .venv313 virtual environment.
+Step 1: Install the missing package
+Run this in your current PowerShell terminal:
+=> python -m pip install langchain-chroma
+
+Note the difference:
+- Package name: langchain-chroma
+- Python import: langchain_chroma
+
+=> python -c "from langchain_chroma import Chroma; print('Chroma import successful')"
+
+
+=> python -m pip install langchain-openai
+
+=> python -c "from langchain_openai import ChatOpenAI; print('Import successful')"
+
+
+
+
+
+
