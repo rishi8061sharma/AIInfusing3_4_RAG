@@ -1,0 +1,57 @@
+py -3.13 -m venv .venv313
+.\.venv313\Scripts\Activate.ps1
+
+
+
+(.venv313) PS D:\AI Infusing Learning\ScalerProjects> pip install langchain-community langchain-text-splitters langchain-huggingface langchain-chroma beautifulsoup4
+
+
+(.venv313) PS D:\AI Infusing Learning\ScalerProjects\AILearning3_4HTMLChat> python .\html_chat.py
+D:\AI Infusing Learning\ScalerProjects\AILearning3_4HTMLChat\html_chat.py:4: DeprecationWarning: `langchain-community` is being sunset and is no longer actively maintained. See https://github.com/langchain-ai/langchain-community/issues/674 for details and migration guidance toward standalone integration packages.
+  from langchain_community.document_loaders import PyPDFLoader
+Traceback (most recent call last):
+  File "D:\AI Infusing Learning\ScalerProjects\AILearning3_4HTMLChat\html_chat.py", line 31, in <module>
+    from langchain_openai import ChatOpenAI
+ModuleNotFoundError: No module named 'langchain_openai'
+
+
+
+(.venv313) PS D:\AI Infusing Learning\ScalerProjects\AILearning3_4HTMLChat> python -m pip install langchain-openai
+
+
+(.venv313) PS D:\AI Infusing Learning\ScalerProjects\AILearning3_4HTMLChat> python .\html_chat.py
+D:\AI Infusing Learning\ScalerProjects\AILearning3_4HTMLChat\html_chat.py:4: DeprecationWarning: `langchain-community` is being sunset and is no longer actively maintained. See https://github.com/langchain-ai/langchain-community/issues/674 for details and migration guidance toward standalone integration packages.
+  from langchain_community.document_loaders import PyPDFLoader
+Traceback (most recent call last):
+  File "D:\AI Infusing Learning\ScalerProjects\AILearning3_4HTMLChat\html_chat.py", line 57, in <module>
+    import gradio as gr
+ModuleNotFoundError: No module named 'gradio'
+
+=> (.venv313) PS D:\AI Infusing Learning\ScalerProjects\AILearning3_4HTMLChat> python -m pip install gradio
+
+(.venv313) PS D:\AI Infusing Learning\ScalerProjects\AILearning3_4HTMLChat> python .\html_chat.py
+D:\AI Infusing Learning\ScalerProjects\AILearning3_4HTMLChat\html_chat.py:4: DeprecationWarning: `langchain-community` is being sunset and is no longer actively maintained. See https://github.com/langchain-ai/langchain-community/issues/674 for details and migration guidance toward standalone integration packages.
+  from langchain_community.document_loaders import PyPDFLoader
+* Running on local URL:  http://127.0.0.1:7860
+2026/10/28 18:48:19 [W] [service.go:132] login to server failed: dial tcp 44.237.78.176:7000: connectex: No connection could be made because the target machine actively refused it.
+
+
+
+
+❌ Failed to index HTML files: By default BSHTMLLoader uses the 'lxml' package. Please either install it with pip install -U lxml or pass in init arg bs_kwargs={'features': '...'} to overwrite the default BeautifulSoup kwargs.
+
+
+
+=> pip install sentence-transformers
+
+=> (.venv313) PS D:\AI Infusing Learning\ScalerProjects\AILearning3_4HTMLChat> python .\html_chat.py
+
+
+=> pip install pypdf
+
+
+
+
+
+
+
